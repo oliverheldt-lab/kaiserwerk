@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Maximize, Car, Home, Layers, MapPin, Sparkles } from 'lucide-react';
 
@@ -45,7 +44,7 @@ const ApartmentDetails: React.FC = () => {
             </div>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-20 items-center">
+          <div className="grid lg:grid-cols-2 gap-20 items-center mb-24">
             {/* Text Content */}
             <div className="space-y-12">
               <div className="relative">
@@ -167,6 +166,54 @@ const ApartmentDetails: React.FC = () => {
               </div>
             </div>
           </div>
+
+          {/* --- NEUER INFOBLOCK: GÄSTECARD (MIT FUNKTIONIERENDEM LINK) --- */}
+          <div className="relative mt-24 bg-gray-50 border border-gray-100 rounded-sm p-8 lg:p-12">
+            <div className="flex flex-col lg:flex-row items-center gap-12">
+              
+              {/* Linkes Bild */}
+              <div className="w-full lg:w-1/2 relative group">
+                <div className="absolute -bottom-3 -right-3 w-full h-full border border-kaiserGold/30 rounded-sm -z-10"></div>
+                <div className="aspect-video w-full overflow-hidden rounded-sm shadow-lg">
+                  <img 
+                    src="images/Wilder_Kaiser_Mobilität_Kaiserjet_Sommer2022_MathäusGartner.jpg" 
+                    alt="Mobilität Wilder Kaiser" 
+                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000"
+                  />
+                </div>
+              </div>
+
+              {/* Rechter Text */}
+              <div className="w-full lg:w-1/2 text-left space-y-6">
+                <div className="flex items-center gap-3 mb-2">
+                   <Sparkles className="text-kaiserGold" size={24} />
+                   <span className="uppercase tracking-[0.2em] text-sm font-bold text-gray-400">Ihr Urlaubs-Plus</span>
+                </div>
+                
+                <h3 className="font-serif text-3xl text-kaiserBlack">
+                  Ihre Wilder Kaiser GästeCard
+                </h3>
+                
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  Die Wilder Kaiser GästeCard erhalten Sie bei uns <span className="font-bold text-kaiserBlack">kostenlos</span> direkt bei Ihrer Anreise. Genießen Sie damit während Ihres gesamten Aufenthalts exklusive Vorteile und Rabatte.
+                </p>
+
+                <div className="pt-2">
+                  <a 
+                    href="https://www.wilderkaiser.info/de/aktivitaeten/wilder-kaiser-gaestecard.html" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-block text-kaiserRed font-semibold uppercase text-xs tracking-widest hover:text-kaiserBlack transition-colors border-b border-kaiserRed pb-1 hover:border-kaiserBlack cursor-pointer"
+                  >
+                    Mehr erfahren
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          {/* --- ENDE INFOBLOCK --- */}
+
         </div>
       </div>
     </div>
