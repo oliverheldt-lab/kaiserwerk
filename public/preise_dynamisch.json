@@ -1,0 +1,75 @@
+
+{
+  "seasons": [
+    {
+      "name": "Winter HS 25/26",
+      "periods": ["20.12.25 - 09.01.26", "31.01.26 - 27.02.26"],
+      "rates": [
+        { "persons": "2 PERS.", "amount": "250" },
+        { "persons": "3 PERS.", "amount": "250" },
+        { "persons": "4 PERS.", "amount": "250" }
+      ]
+    },
+    {
+      "name": "Winter NS 25/26",
+      "periods": [
+        "13.12.25 - 19.12.25", 
+        "10.01.26 - 30.01.26", 
+        "28.02.26 - 24.04.26", 
+        "31.10.26 - 18.12.26"
+      ],
+      "rates": [
+        { "persons": "2 PERS.", "amount": "150" },
+        { "persons": "3 PERS.", "amount": "165" },
+        { "persons": "4 PERS.", "amount": "180" }
+      ]
+    },
+    {
+      "name": "Sommer 26",
+      "periods": ["25.04.26 - 30.10.26"],
+      "rates": [
+        { "persons": "2 PERS.", "amount": "120" },
+        { "persons": "3 PERS.", "amount": "135" },
+        { "persons": "4 PERS.", "amount": "150" }
+      ]
+    },
+    {
+      "name": "Winter HS 26/27",
+      "periods": ["19.12.26 - 08.01.27", "30.01.27 - 26.02.27"],
+      "rates": [
+        { "persons": "2 PERS.", "amount": "250" },
+        { "persons": "3 PERS.", "amount": "250" },
+        { "persons": "4 PERS.", "amount": "250" }
+      ]
+    },
+    {
+      "name": "Winter NS 26/27",
+      "periods": [
+        "31.10.26 - 18.12.26", 
+        "09.01.27 - 29.01.27", 
+        "27.02.27 - 23.04.27",
+        "31.10.27 - 17.12.27"
+      ],
+      "rates": [
+        { "persons": "2 PERS.", "amount": "150" },
+        { "persons": "3 PERS.", "amount": "165" },
+        { "persons": "4 PERS.", "amount": "180" }
+      ]
+    },
+    {
+      "name": "Sommer 27",
+      "periods": ["24.04.27 - 29.10.27", "31.10.27 - 17.12.27"],
+      "rates": [
+        { "persons": "2 PERS.", "amount": "120" },
+        { "persons": "3 PERS.", "amount": "135" },
+        { "persons": "4 PERS.", "amount": "150" }
+      ]
+    }
+  ],
+  "importantInfo": [
+    { "label": "Check-In / Out", "value": "Ab 14:30 / Bis 09:30 Uhr", "icon": "Clock" },
+    { "label": "Belegung", "value": "max. 4 Personen", "icon": "Users" },
+    { "label": "Haustiere", "value": "€ 10/Tag", "icon": "PawPrint" },
+    { "label": "Endreinigung", "value": "€ 150", "icon": "Sparkles" }
+  ]
+}

@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaiserwerk | Stilvolle Ferienwohnung</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js?render=6Ld2sWUsAAAAAOUgew4avb8tjM7e6s9YIizftRz3"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              kaiserRed: '#A61D33',
+              kaiserGold: '#C5A059',
+              kaiserBlack: '#1A1A1A',
+              kaiserWhite: '#F9F9F9',
+            },
+            fontFamily: {
+              serif: ['Playfair Display', 'serif'],
+              sans: ['Inter', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html { 
+        scroll-behavior: smooth; 
+        scroll-padding-top: 80px; /* Accounts for the fixed navbar height */
+      }
+      body { 
+        background-color: #F9F9F9; 
+        color: #1A1A1A; 
+      }
+      
+      /* Custom selection color matching the theme */
+      ::selection {
+        background-color: #A61D33;
+        color: white;
+      }
+
+      /* Adjust reCAPTCHA badge position if needed */
+      .grecaptcha-badge { z-index: 1000; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
